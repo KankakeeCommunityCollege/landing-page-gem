@@ -1,0 +1,16 @@
+{% include document-head.html %}
+  {% include styles/fonts.html %}
+  {% include scripts/google-tag.html %}
+  {% if page.url == '/' %}{% include targetx-head.html %}{% endif %}
+  {% include styles/vendor.html %}
+  {% include styles/main.html %}
+  {% include body.html %}
+  {% include scripts/google-noscript.html %}
+  {% include navbar.html %}
+  {{ content }}
+  {% include benefits.html %}
+  {% include bottom-action-call.html %}
+  {% include footer.html %}
+  {% include scripts/vendor-cdn.html %}
+  {% include scripts/custom-theme.html %}
+{% include foot.html %}
