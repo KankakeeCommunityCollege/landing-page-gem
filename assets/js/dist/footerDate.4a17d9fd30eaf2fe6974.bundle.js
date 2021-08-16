@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklanding_page_gem=self.webpackChunklanding_page_gem||[]).push([[157],{909:function(e,n,a){a.r(n),n.default=function(){var e=(new Date).getFullYear();document.getElementById("currentYear").innerHTML=e}}}]);

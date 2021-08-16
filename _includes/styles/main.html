@@ -1,6 +1,6 @@
     {% if jekyll.environment == "production" or jekyll.environment == "publish" %}
     <!-- Custom CSS for the KCC Theme -->
-    <link rel="stylesheet" href="{{page.baseurl}}assets/js/dist/kcc-theme.{% include hash/landing.yml %}.css">
+    <link rel="stylesheet" href="{{page.baseurl}}assets/js/dist/kcc-landing-page.{% include hash/landing.yml %}.css">
     {% if site.theme_config != true %}
     <!-- Link to this site's main stylesheet -->
     <link rel="stylesheet" href="{{page.baseurl}}assets/js/dist/main{% if site.data.hash %}.{{ site.data.hash }}{% endif %}.css">
