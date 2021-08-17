@@ -2,10 +2,18 @@
 .thank-you {
   &__check-mark {
     height: 75px;
+    position: relative;
+    top: -1rem;
     width: 75px;
   }
   &__main {
     min-height: 50vh;
+  }
+}
+
+@media screen and ( min-width: 768px) {
+  .thank-you__check-mark {
+    position: static;
   }
 }
 
