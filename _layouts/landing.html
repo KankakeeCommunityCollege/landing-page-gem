@@ -1,10 +1,11 @@
 {% include document-head.html %}
   {% include styles/fonts.html %}
   {% include scripts/google-tag.html %}
-  {% if page.url == '/' %}{% include targetx-head.html %}{% endif %}
+  {% if page.url == '/' %}
+  {% include targetx-head.html %}{% endif %}
   {% include styles/vendor.html %}
   {% include styles/main.html %}
-  {% include body.html %}
+{% include body.html %}
   {% include scripts/google-noscript.html %}
   {% include navbar.html %}
   {{ content }}
