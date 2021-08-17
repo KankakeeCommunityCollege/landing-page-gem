@@ -1,3 +1,6 @@
+// Rules for custom styles in CloudCannon.
+// Must have both 1-element and 1-class selector.
+// Must be fully-expanded (not compressed) CSS file
 img.float-image-left {
   float: left;
   max-width: 100%;
