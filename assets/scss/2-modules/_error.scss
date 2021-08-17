@@ -1,0 +1,20 @@
+
+.error__main-heading {
+  color: $primary-red;
+  font-weight: $font-weight-bold;
+}
+
+.error__sub-heading {
+  color: $primary-blue;
+  font-weight: $font-weight-bold;
+}
+
+.error__main {
+  min-height: 50vh;
+}
+
+@media screen and (min-width: 992px) {
+  .error__main {
+    min-height: 65vh;
+  }
+}

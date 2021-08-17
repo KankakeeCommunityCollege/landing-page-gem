@@ -1,3 +1,4 @@
+// #### ANY CHANGE TO THIS FILE REQUIRES THE BUILD-COMMAND TO BE RESTARTED ####
 process.traceDeprecation = true;
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
