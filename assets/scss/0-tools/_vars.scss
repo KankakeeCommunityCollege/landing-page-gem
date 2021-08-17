@@ -50,12 +50,14 @@ $grey-6: #58585b;
 $grey-7: #868686;
 $grey-8: #d9d9d9;
 
+$color-grey-bg: #b8babc;
 $white: #fff;
 
 $color-alert: #856404;
 $color-blue-reboot: #007bff;        // link color specified in reboot
 $color-blue-reboot-hover: #0056b3;  // link:hover color specified in reboot
 $color-green-emerald: #148ba9;
+$color-green-check: #00A14B;
 
 
 $landing-bg: $grey-2;        // Landing page's background-color
@@ -73,3 +75,4 @@ $btn-hover-bg: #022b55;
 $btn-hover-border: #021e3d;
 $darker-link: #006ce0;
 $orange-heading: $color-orange;
+$success-check-mark: $color-green-check;
