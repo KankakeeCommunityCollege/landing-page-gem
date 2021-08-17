@@ -8,9 +8,7 @@ function loadModule(module) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (document.querySelector('img[data-src]')) {
-    loadModule('lazyLoad');
-  }
   loadModule('footerDate');
-  loadModule('landingPage');
+  document.querySelector('img[data-src]') ? loadModule('lazyLoad'): null;
+  window.location.pathname == '/' ? loadModule('landingPage'): null;
 });

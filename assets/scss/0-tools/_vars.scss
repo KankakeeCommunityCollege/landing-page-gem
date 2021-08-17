@@ -41,6 +41,7 @@ $color-page-background: $color-blue-grey;
 $color-blue-light-nav: $color-blue-grey;
 
 $black: #000;
+$grey-0: #555;
 $grey-1: #666;
 $grey-2: #e5e8ed;
 $grey-3: #f1f2f7;            //  Background color for slick tracks
@@ -59,11 +60,11 @@ $color-blue-reboot-hover: #0056b3;  // link:hover color specified in reboot
 $color-green-emerald: #148ba9;
 $color-green-check: #00A14B;
 
-
+$color-grey-typography: $grey-0;   // Base grey-color for typography elements like p, ul, ol, etc.
+$color-grey-heading: $grey-0;      // Grey headings used within page content
 $landing-bg: $grey-2;        // Landing page's background-color
 $default-bg: $white;        // Background color for non-landing pages
 $footer-bg: $white;         // Footer's background color
-$color-grey-heading: $grey-1;      // Grey headings used within page content
 $fa-color: $primary-red;
 $slide-bg: $white;            // Background color for the upcoming games slick slides
 $sub-nav-heading: $white;     // Font color for h1.page-heading heading of sub-nav

@@ -146,7 +146,7 @@ body {
 p,
 ul:not(.navbar-nav), // :not() selecter prevents unnecesary style override
 ol { // Needed so list font looks the same as paragraph font
-  color: $color-grey-heading; // Bootstrap sets these things to black
+  color: $color-grey-typography; // Bootstrap sets these things to black
   font-family: $font-family-paragraph;
   font-size: $font-size-base;
 }
@@ -276,15 +276,6 @@ h1 sup, h2 sup, h3 sup, h4 sup, h5 sup, h6 sup { // Make superscripts within hea
   .typography__register-h4 {
     font-size: 2.3rem;
   }
-}
-
-#page-top::before {
-  display: block;
-  content: " ";
-  margin-top: -60px;
-  height: 60px;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .typography__larger-p {

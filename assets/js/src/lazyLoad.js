@@ -3,7 +3,7 @@
 function lazyLoad() {
   const lazyLoadImages = document.querySelectorAll('img[data-src]');
 
-  [...lazyLoadImages].forEach((img, i, arr) => {
+  [...lazyLoadImages].forEach( img => {
     img.setAttribute('src', img.getAttribute('data-src'));
     img.onload = () => img.removeAttribute('data-src');
   });

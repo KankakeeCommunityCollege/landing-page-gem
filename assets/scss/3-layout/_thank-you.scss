@@ -5,6 +5,12 @@
     width: 75px;
   }
   &__main {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .thank-you__main {
     min-height: 65vh;
   }
 }

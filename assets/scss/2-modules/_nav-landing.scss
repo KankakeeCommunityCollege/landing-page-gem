@@ -67,6 +67,71 @@
   }
 }
 
+.nav-landing__kcc-logo-inverse {
+  margin-left: -3px;
+  width: 50px;
+  margin-right: -10px;
+}
+
+@media screen and (min-width: 360px) {
+  .nav-landing__kcc-logo-inverse {
+    width: 60px;
+  }
+}
+
+@media screen and (min-width: 410px) {
+  .nav-landing__kcc-logo-inverse {
+    width: 68px;
+  }
+}
+
+@media screen and (min-width: 488px) {
+  .nav-landing__kcc-logo-inverse {
+    width: 68px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .nav-landing__kcc-logo-inverse {
+    width: 73px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-landing__kcc-logo-inverse {
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav-landing__kcc-logo-inverse {
+    width: 80px;
+    margin-left: -30px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .nav-landing__kcc-logo-inverse {
+    width: 85px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .nav-landing__kcc-logo-inverse {
+    width: 85px;
+    margin-left: -35px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .nav-landing__kcc-logo-inverse {
+    width: 85px;
+    margin-left: -40px;
+  }
+}
+
 .nav-landing__navbar-brand {
   margin-left: -10px;
 }
@@ -134,70 +199,5 @@
 @media screen and (min-width: 2000px) {
   .nav-landing__navbar-brand {
     margin-left: -3.5%;
-  }
-}
-
-.nav-landing__kcc-logo-inverse {
-  margin-left: -3px;
-  width: 50px;
-  margin-right: -10px;
-}
-
-@media screen and (min-width: 360px) {
-  .nav-landing__kcc-logo-inverse {
-    width: 60px;
-  }
-}
-
-@media screen and (min-width: 410px) {
-  .nav-landing__kcc-logo-inverse {
-    width: 68px;
-  }
-}
-
-@media screen and (min-width: 488px) {
-  .nav-landing__kcc-logo-inverse {
-    width: 68px;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .nav-landing__kcc-logo-inverse {
-    width: 73px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav-landing__kcc-logo-inverse {
-    width: 80px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .nav-landing__kcc-logo-inverse {
-    width: 80px;
-    margin-left: -30px;
-    margin-right: 20px;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .nav-landing__kcc-logo-inverse {
-    width: 85px;
-    margin-right: 15px;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .nav-landing__kcc-logo-inverse {
-    width: 85px;
-    margin-left: -35px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .nav-landing__kcc-logo-inverse {
-    width: 85px;
-    margin-left: -40px;
   }
 }
