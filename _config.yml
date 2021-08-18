@@ -1,6 +1,6 @@
 #### ANY CHANGE TO THIS FILE REQUIRES THE BUILD-COMMAND TO BE RESTARTED ####
 title: "KCC"
-site_name: veterans
+site_name: Veterans
 public-url: "http://www.kcc.edu"
 url: 'URL is needed for robots.txt to work properly' ## NO TRAILING SLASHES!!/<--nope
 port: 3000

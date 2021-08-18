@@ -42,6 +42,9 @@
   &--fill-green {
     fill: $success-check-mark;
   }
+  &__earn-more {
+    transform: scale(1.35);
+  }
 }
 
 .svg__fill--bright-red {
@@ -51,3 +54,4 @@
 .svg__fill--red-shadow {
   fill: #8F0F28;
 }
+
