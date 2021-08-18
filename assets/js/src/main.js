@@ -7,8 +7,13 @@ function loadModule(module) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
+  const onHomepage = window.location.pathname == '/';
+
   loadModule('footerDate');
+  onHomepage ? loadModule('landingPage'): null;
+});
+
+document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('img[data-src]') ? loadModule('lazyLoad'): null;
-  window.location.pathname == '/' ? loadModule('landingPage'): null;
 });
