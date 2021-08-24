@@ -13,8 +13,8 @@ class WebpackHashFilePlugin{
     this.options= Object.assign({}, {
       fileName: 'hash.yml',
       path: '../_data'
-  }, options)
-}
+    }, options)
+  }
 
   apply(compiler) {
     const options = this.options;
@@ -29,7 +29,9 @@ class WebpackHashFilePlugin{
           return
         }
         //file written successfully
-      }, console.log(`Plugin {${colors.brightYellow('WebpackHashFilePlugin')}} created ${colors.brightWhite(output)} ${getFilesizeInBytes(output)} bytes ${colors.brightGreen('[built]')}`));
+        console.log(`Plugin {${colors.brightYellow('WebpackHashFilePlugin')}} created ${colors.brightWhite(output)} ${getFilesizeInBytes(output)} bytes ${colors.brightGreen('[built]')}`);
+        console.log(`Hash: ${colors.brightWhite(content)}`);
+      });
    });
   }
 };
