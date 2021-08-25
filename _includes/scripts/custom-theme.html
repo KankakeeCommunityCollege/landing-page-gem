@@ -1,6 +1,6 @@
 
     <!-- custom compiled and minified javascript -->
     <script src="{{page.baseurl}}assets/js/dist/kcc-landing-page.{% include hash/landing.yml %}.bundle.js" defer></script>
-    {% if site.custom_js == true %}
+    {% if site.custom_site_js == true %}
     <script src="{{ page.baseurl }}assets/js/dist/main.{% if site.data.hash %}{{ site.data.hash }}.{% endif %}bundle.js" defer></script>
     {% endif %}

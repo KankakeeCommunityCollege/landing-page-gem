@@ -3,11 +3,21 @@
   <!-- preconnect to the Eurostile typekit font -->
   <link rel="preconnect" href="https://use.typekit.net">
   <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Google Cusom Search -->
   <link rel="preconnect" href="https://clients1.google.com">
   <link rel="preconnect" href="https://www.google.com">
   <!-- Custom theme JS -->
-  <link rel="preconnect" as="script" href="{{page.baseurl}}assets/js/dist/kcc-landing-page.{% include hash/landing.yml %}.bundle.js">
+  <link rel="preload" as="script" href="{{page.baseurl}}assets/js/dist/kcc-landing-page.{% include hash/landing.yml %}.bundle.js">
+  <link rel="preload" as="style" href="{{page.baseurl}}assets/js/dist/kcc-landing-page.{% include hash/landing.yml %}.css">
+  {% if site.custom_site_js == true %}    
   <link rel="preconnect" as="script" href="{{page.baseurl}}assets/js/dist/main{% if site.data.hash %}.{{ site.data.hash }}{% endif %}.bundle.js">
+  {% endif %}
+  {% if site.custom_site_styling == true %}
+  <link rel="preload" as="style" href="{{page.baseurl}}assets/js/dist/main{% if site.data.hash %}.{{ site.data.hash }}{% endif %}.css">  
+  {% endif %}
+  {% if page.background_image %}
+  <link rel="preload" as="image" href="{{ page.background_image }}">
+  {% endif %}
   <!-- End of preconnects -->
