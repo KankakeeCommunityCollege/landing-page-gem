@@ -2,6 +2,12 @@
 
 A Jekyll Gem theme for KCC landing-pages/micro-sites.
 
+[![Gem Version](https://badge.fury.io/rb/landing-page-gem.svg)](https://badge.fury.io/rb/landing-page-gem)
+
+- <https://rubygems.org/gems/landing-page-gem>
+
+-----
+
 
 ## Installation
 
