@@ -7,14 +7,20 @@ function loadModule(module) {
   });
 }
 
-window.addEventListener('load', () => {
-  const onHomepage = window.location.pathname == '/';
-
-  loadModule('footerDate');
-  onHomepage ? loadModule('landingPage') : null;
-});
-
 document.addEventListener('DOMContentLoaded', () => {
-  window.location.hostname.search(/\.kcc\.edu/) !== -1 ? loadModule('loadClarusCorpScript') : null;
-  document.querySelector('img[data-src]') ? loadModule('lazyLoad'): null;
+
+  Promise.resolve()
+    .then(() => {
+      if ( window.location.hostname.search(/\.kcc\.edu/) !== -1 ) {
+        loadModule('loadClarusCorpScript');
+    }})
+    .then(() => {
+    if ( document.querySelector('img[data-src]') ) {
+      loadModule('lazyLoad');
+    }})
+    .then(() => loadModule('footerDate'))
+    .then(() => {
+      if ( document.querySelector('a[href="#page-top"]') ) {
+        loadModule('landingPage');
+    }})
 });
