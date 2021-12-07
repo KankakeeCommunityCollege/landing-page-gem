@@ -4,7 +4,7 @@ site_name: Veterans
 public-url: "https://subdomain.kcc.edu"
 url: 'URL is needed for robots.txt to work properly' ## NO TRAILING SLASHES!!/<--nope
 port: 3000
-# contact_phone: 815-802-8888
+## contact_phone: 815-802-8888 ### Set to phone number in the `815-802-8888` format or `false` to remove the phone number from navbar. ###
 timezone: America/Chicago
 google-tag_key: Google Tag Manager key goes here
 theme_config: true

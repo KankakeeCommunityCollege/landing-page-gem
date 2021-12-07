@@ -114,8 +114,10 @@
       </svg>
     </a>
     <span class="typography__phone--span">
+      {% if site.contact_phone != false %}
       <a class="links__phone--span"
       href="tel:+1{% if site.contact_phone %}{{ site.contact_phone | remove: '-' }}{% else %}8158028508{% endif %}">
       {% if site.contact_phone %}{{ site.contact_phone }}{% else %}815-802-8508{% endif %}</a>
+      {% endif %}
     </span>
   </nav>
