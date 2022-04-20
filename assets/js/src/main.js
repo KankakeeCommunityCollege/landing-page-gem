@@ -24,6 +24,11 @@ window.addEventListener('load', () => {
         return;
       
       return loadModule('landingPage');
+    }).then(() => {
+      if (!document.getElementById('SearchTermForm'))
+        return;
+      
+      return import('./watchForWebsiteSearch').then(({default: init}) => init())
     }).catch(err => {
       console.error(`Error loading landing-page JS modules: ${err.message}`, err);
     })
