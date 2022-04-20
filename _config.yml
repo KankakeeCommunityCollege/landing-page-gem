@@ -11,6 +11,7 @@ theme_config: true
 humans_file: true
 custom_site_js: false
 custom_site_styling: false
+contact_phone: 815-802-8500 # 8500 is main Advising/student services number
 permalink: pretty
 description: > # this means to ignore newlines until "baseurl:"
 # Delete this comment and place description on this line
