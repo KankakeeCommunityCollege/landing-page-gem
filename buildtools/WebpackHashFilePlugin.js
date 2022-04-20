@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const colors = require('colors'); // For nicer looking console output
 
-function getFilesizeInBytes(filename) { // Small function to get the size of the output hash data using Node.js `fs.statSync()`
+function getFileSizeInBytes(filename) { // Small function to get the size of the output hash data using Node.js `fs.statSync()`
   const stats = fs.statSync(filename);
   const fileSizeInBytes = stats.size;
   return fileSizeInBytes;
@@ -29,7 +29,7 @@ class WebpackHashFilePlugin{
           return
         }
         //file written successfully
-        console.log(`Plugin {${colors.brightYellow('WebpackHashFilePlugin')}} created ${colors.brightWhite(output)} ${getFilesizeInBytes(output)} bytes ${colors.brightGreen('[built]')}`);
+        console.log(`Plugin {${colors.brightYellow('WebpackHashFilePlugin')}} created ${colors.brightWhite(output)} ${getFileSizeInBytes(output)} bytes ${colors.brightGreen('[built]')}`);
         console.log(`Hash: ${colors.brightWhite(content)}`);
       });
    });
