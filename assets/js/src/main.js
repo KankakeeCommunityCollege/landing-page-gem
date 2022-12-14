@@ -1,30 +1,24 @@
 import '../../scss/main.scss';
-// import test from './test';
 
-function loadModule(module) {
-  return import(`${module}`).then(({default: module}) => module())
-}
+window.addEventListener('load', async () => {
+  if (document.querySelector('img[data-src]')) {
+    const { default: lazyLoad } = await import('./lazyLoad');
 
-window.addEventListener('load', () => {
+    lazyLoad();
+  }
+  const { default: footerDate } = await import('./footerDate');
 
-  Promise.resolve()
-    .then(() => {
-      if (!document.querySelector('img[data-src]'))
-        return;
-      
-      return loadModule('./lazyLoad');
-    }).then(() => loadModule('./footerDate'))
-    .then(() => {
-      if (!document.querySelector('a[href="#page-top"]'))
-        return;
-      
-      return loadModule('./landingPage');
-    }).then(() => {
-      if (!document.getElementById('SearchTermForm'))
-        return;
-      
-      return import('./watchForWebsiteSearch').then(({ default: init }) => init());
-    }).catch(err => {
-      console.error(`Error loading landing-page JS modules: ${err.message}`, err);
-    })
+  footerDate();
+
+  if (document.querySelector('a[href="#page-top"]')) {
+    const { default: landingPage } = await import('./landingPage');
+
+    landingPage();
+  }
+
+  if (document.getElementById('SearchTermForm')) {
+    const { default: websiteSearch } = await import('./websiteSearch');
+
+    websiteSearch();
+  }
 });

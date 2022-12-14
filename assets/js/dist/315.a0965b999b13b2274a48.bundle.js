@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklanding_page_gem=self.webpackChunklanding_page_gem||[]).push([[315],{5315:function(e,n,a){a.r(n),n.default=function(){console.log("Test")}}}]);

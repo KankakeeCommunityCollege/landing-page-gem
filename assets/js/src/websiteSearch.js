@@ -10,8 +10,8 @@ function submissionHandler(e) {
   return window.location = new URL(SEARCH_URL_PATH + SEARCH_QUERY);
 }
 
-function watchForWebsiteSearch() {
+function websiteSearch() {
   FORM.addEventListener('submit', submissionHandler);
 }
 
-export default watchForWebsiteSearch;
+export default websiteSearch;
