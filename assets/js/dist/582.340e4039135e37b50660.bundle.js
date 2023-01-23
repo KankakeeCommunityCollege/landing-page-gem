@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklanding_page_gem=self.webpackChunklanding_page_gem||[]).push([[582],{582:function(e,t,a){a.r(t);const n=document.querySelectorAll("img[data-src]");t.default=function(){for(const e of n)e.src=e.getAttribute("data-src"),e.onload=()=>e.removeAttribute("data-src")}}}]);
