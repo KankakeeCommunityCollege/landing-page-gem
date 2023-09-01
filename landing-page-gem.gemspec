@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "landing-page-gem"
-  spec.version       = "0.10.1"
+  spec.version       = "0.11.0"
   spec.authors       = ["wdzajicek"]
   spec.email         = ["wdzajicek@gmail.com"]
 
@@ -12,5 +12,5 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|LICENSE|README|_config\.yml)!i) }
 
-  spec.add_runtime_dependency "jekyll", "~> 4.2"
+  spec.add_runtime_dependency "jekyll", "~> 4"
 end
