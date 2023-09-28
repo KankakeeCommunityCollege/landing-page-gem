@@ -1,18 +1,30 @@
     <footer class="footer footer__margin">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 footer__mobile--margin-bottom">
+          <div class="col-lg-4 text-center mb-4">
+            <img
+              src="{{ page.baseurl }}assets/img/iccmc-logo_blue-transparent.png"
+              class="img-fluid"
+              height="171"
+              width="300"
+              alt="The Community Colleges of Illinois. For every student, for every community.">
+          </div>
+          <div class="col-lg-4 footer__mobile--margin-bottom mb-4 my-lg-auto">
             <div class="row">
               <div class="col-lg-12 text-center">
-                <a href="{{ site.public-url }}" class="footer-link">
-                  <h5 class="typography__footer-heading{% if site.public-url.size > 25 %} typography__footer-heading--long{% endif %}">
+                <a href="{% if site.footer_link %}{{ site.footer_link }}{% else %}{{ site.public-url }}{% endif %}" class="footer-link">
+                  <h5 class="typography__footer-heading{% if site.footer_link %}{% if site.footer_link.size > 20 %} typography__footer-heading--long{% endif %}{% else %}{% if site.public-url.size > 20 %} typography__footer-heading--long{% endif %}{% endif %}">
+                  {% if site.footer_link_text %}
+                    {{ site.footer_link_text }}
+                  {% else %}
                     {{ site.public-url | replace: "https://", "" | replace: "http://", "" }}
+                  {% endif %}
                   </h5>
                 </a>
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-12 px-0">
                 <div class="text-center">
                   <span>
                     <a href="https://www.facebook.com/KankakeeCommunityCollege/" class="footer-social-links" target="_blank" rel="noopener">
@@ -164,7 +176,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0 my-auto">
             <a href="https://www.kcc.edu" target="_blank" rel="noopener">
               <svg
                 id="KCC-text-logo"
@@ -262,7 +274,7 @@
             </a>
             <p>100 College Drive Kankakee, IL 60901 <br>
             <a class="links__darker-link" href="tel:18158028100">815-802-8100</a> <br>
-            &copy;&nbsp;<span id="currentYear">{{ 'now' | date: '%Y' }}</span> Kankakee Community College</p>
+            &copy;&nbsp;<span id="currentYear">{{ "now" | date: "%Y" }}</span> Kankakee Community College</p>
           </div>
         </div>
       </div>

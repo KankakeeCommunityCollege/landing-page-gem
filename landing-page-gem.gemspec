@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "landing-page-gem"
-  spec.version       = "0.11.1"
+  spec.version       = "0.12.0"
   spec.authors       = ["wdzajicek"]
   spec.email         = ["wdzajicek@gmail.com"]
 

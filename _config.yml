@@ -1,7 +1,9 @@
 #### ANY CHANGE TO THIS FILE REQUIRES THE BUILD-COMMAND TO BE RESTARTED ####
 title: "KCC"
 site_name: Veterans
-public-url: "https://subdomain.kcc.edu"
+public-url: "https://subdomain.kcc.edu"   # `public-url` is used to construct footer link and it's text, unless...
+# footer_link: 'https://itcert.kcc.edu'   # `footer_link` & `footer_link_text` are present they override `public-url`
+# footer_link_text: 'ITcert.kcc.edu'      # Use `footer_link` & `footer_link_text` to create text/href that don't match
 url: 'URL is needed for robots.txt to work properly' ## NO TRAILING SLASHES!!/<--nope
 port: 3000
 ## contact_phone: 815-802-8888 ### Set to phone number in the `815-802-8888` format or `false` to remove the phone number from navbar. ###
