@@ -2,10 +2,6 @@
 *.gem
 .bundle
 
-### Ignore the Gemfile to keep it out of cloudcannon ###
-#Gemfile
-Gemfile.lock
-
 ### General Apple things to ignore ###
 .DS_Store
 .AppleDouble
@@ -39,11 +35,6 @@ _site
 
 ### Nodejs Stuffs
 node_modules/
-# Avoid win/mac/linux discrepencies
-package-lock.json
-
-# Ignore gem lock to avoid mac/windows discrepencies
-#Gemfile.lock
 
 # Jekyll 4's caching dir
 .jekyll-cache/
