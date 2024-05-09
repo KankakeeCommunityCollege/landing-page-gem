@@ -1,7 +1,9 @@
 <!-- preconnect to assets -->
   <!-- fonts -->
+  {% if site.include_eurostile_font or page.include_eurostile_font %}
   <!-- preconnect to the Eurostile typekit font -->
   <link rel="preconnect" href="https://use.typekit.net">
+  {% endif %}
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
