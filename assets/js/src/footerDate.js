@@ -1,13 +1,13 @@
 // Sets copyright year
-const YEAR_SPAN = document.getElementById('currentYear');
+const yearSpan = document.getElementById('currentYear');
 
 function footerDate() {
   const d = new Date();
   const year = d.getFullYear();
 
-  if (YEAR_SPAN.innerHTML === `${year}`)
+  if (yearSpan.innerHTML === `${year}`)
     return;
 
-  YEAR_SPAN.innerHTML = year;
+  yearSpan.innerHTML = year;
 }
 export default footerDate;

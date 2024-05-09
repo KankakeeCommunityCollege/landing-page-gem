@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    landing-page-gem (0.17.0)
+    landing-page-gem (1.0.0)
       jekyll (~> 4)
 
 GEM
