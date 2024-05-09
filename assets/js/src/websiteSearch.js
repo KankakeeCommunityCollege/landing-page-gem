@@ -1,17 +1,17 @@
-const FORM = document.getElementById('SearchTermForm');
-const SEARCH_URL_PATH = 'https://www.kcc.edu/search';
+const searchForm = document.getElementById('SearchTermForm');
+const searchUrlPath = 'https://www.kcc.edu/search';
 
 function submissionHandler(e) {
   const target = e.target;
-  const SEARCH_STRING = encodeURIComponent(target.querySelector('#searchTermInput').value);
-  const SEARCH_QUERY = `?q=${SEARCH_STRING}`
+  const searchString = encodeURIComponent(target.querySelector('#searchTermInput').value);
+  const searchQuery = `?q=${searchString}`
 
   e.preventDefault();
-  return window.location = new URL(SEARCH_URL_PATH + SEARCH_QUERY);
+  return window.location = new URL(searchUrlPath + searchQuery);
 }
 
 function websiteSearch() {
-  FORM.addEventListener('submit', submissionHandler);
+  searchForm.addEventListener('submit', submissionHandler);
 }
 
 export default websiteSearch;

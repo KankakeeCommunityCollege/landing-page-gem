@@ -23,6 +23,7 @@ const config = {
   plugins,
   entry: {
     'kcc-landing-page': './assets/js/src/main.js',
+    'bootstrap': './assets/js/src/bootstrap.js'
   },
   output: {
     filename: '[name].[fullhash].bundle.js',
