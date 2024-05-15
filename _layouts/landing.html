@@ -10,5 +10,10 @@
   {% include navbar.html %}
   {{ content }}
   {% include footer.html %}
+  {% if page.include_gapi %}
+  {% include scripts/google-api.html %}
+  {% endif %}
+  {%- if page.include_datatables -%}
+  {% include scripts/table-cdn.html %}{% endif %}
   {% include scripts/custom-theme.html %}
 {% include foot.html %}

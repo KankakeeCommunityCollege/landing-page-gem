@@ -7,9 +7,23 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Google Cusom Search -->
-  <link rel="preconnect" href="https://clients1.google.com">
-  <link rel="preconnect" href="https://www.google.com">
+  {% if page.include_gapi %}
+  <!-- Google API -->
+  <link rel="preconnect" href="https://apis.google.com/js/api.js">
+  {% endif %}
+  {% if page.include_datatables %}
+  <link rel="preconnect" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
+  <!-- dataTables "Responsive" extension stylesheet for bootstrap4 theme -->
+  <link rel="preconnect" href="https://cdn.datatables.net/responsive/2.2.2/css/responsive.bootstrap4.min.css" crossorigin="anonymous">
+  <!-- jQuery for pages that use DataTabes -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous">
+  <!-- dataTables assets -->
+  <link rel="preconnect" href="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js" crossorigin="anonymous">
+  <!-- dataTable's Bootstrap4 theme's JS -->
+  <link rel="preconnect" href="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js" crossorigin="anonymous">
+  <!-- dataTable's JS for "Responsive" extension -->
+  <link rel="preconnect" href="https://cdn.datatables.net/responsive/2.2.2/js/dataTables.responsive.min.js" crossorigin="anonymous">
+  {% endif %}
   <!-- Custom theme JS -->
   <link rel="preload" as="script" href="{{page.baseurl}}assets/js/dist/kcc-landing-page.{% include hash/landing.yml %}.bundle.js">
   <link rel="preload" as="style" href="{{page.baseurl}}assets/js/dist/kcc-landing-page.{% include hash/landing.yml %}.css">

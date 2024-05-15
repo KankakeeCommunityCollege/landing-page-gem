@@ -1,3 +1,10 @@
 <!-- CDN assets -->
   <!-- Bootstrap 4 minified stylesheet -->
   <link rel="stylesheet" href="{{ page.baseurl }}assets/js/dist/bootstrap.{% include hash/landing.yml %}.css">
+  {% if page.include_datatables %}
+  <!-- dataTables stylesheets -->
+  <!-- dataTables Bootstrap themed stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
+  <!-- dataTables "Responsive" extension stylesheet for bootstrap4 theme -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.2/css/responsive.bootstrap4.min.css" crossorigin="anonymous">
+  {% endif %}
