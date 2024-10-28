@@ -1,3 +1,5 @@
+@use '../0-tools/vars' as *;
+
 .benefits__typography--h5 {
   color: $primary-red;
   font-family: $font-family-oswald;
