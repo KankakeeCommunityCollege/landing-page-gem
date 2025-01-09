@@ -5,6 +5,11 @@
 {% else %}
   {% assign image = item.portrait %}
 {% endif %}
+{% if item.portrait_alt_text %}
+  {% assign alt_text = item.portrait_alt_text %}
+{% else %}
+  {% assign alt_text = item.name %}
+{% endif %}
 {% capture even_odd_cycle %}{% cycle 'odd', 'even' %}{% endcapture %}
 {% if even_odd_cycle == 'odd' %}
 <div class="row{% if forloop.first != true %} benefits__row--pad{% endif %} mb-5 mb-lg-0">
@@ -15,7 +20,7 @@
       class="benefits__borders--circle-img img-fluid rounded-circle"
       height="284px"
       width="284px"
-      alt="{{ item.name }}">
+      alt="{{ alt_text }}">
   </div>
   <div class="col-12 col-md-8 align-self-center">
     <p class="benefits__typography--student-p">
@@ -43,7 +48,7 @@
       class="benefits__borders--circle-img img-fluid rounded-circle"
       height="284px"
       width="284px"
-      alt="{{ item.name }}">
+      alt="{{ alt_text }}">
   </div>
 </div>
 {% endif %}

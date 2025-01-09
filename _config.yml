@@ -60,6 +60,7 @@ compress_html:
   # startings: [head, body]  # Array of elements with optional start tags
   # profile: true            # Generate a table of compression/savings stats
 
+# CloudCannon input configuration (see: https://cloudcannon.com/documentation/articles/configure-your-inputs/ for more info)
 _inputs:
   testimonials[*].portrait:
     type: image
@@ -68,8 +69,8 @@ _inputs:
       width: 400
   testimonials[*].quote:
     type: textarea
-    name:
-      type: text
+  testimonials[*].name:
+      type: textarea
   testimonials[*].year:
     type: text
     comment: Graduation year (e.g. '24)
