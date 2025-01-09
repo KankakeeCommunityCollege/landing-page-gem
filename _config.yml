@@ -59,3 +59,17 @@ compress_html:
     envs: ['development']  # Array of environments to not compress in (from JEKYLL_ENV)
   # startings: [head, body]  # Array of elements with optional start tags
   # profile: true            # Generate a table of compression/savings stats
+
+_inputs:
+  testimonials[*].portrait:
+    type: image
+    options:
+      height: 400
+      width: 400
+  testimonials[*].quote:
+    type: textarea
+    name:
+      type: text
+  testimonials[*].year:
+    type: text
+    comment: Graduation year (e.g. '24)
