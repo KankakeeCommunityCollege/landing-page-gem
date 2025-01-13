@@ -25,7 +25,11 @@
   <div class="col-12 col-md-8 align-self-center">
     <p class="benefits__typography--student-p">
       <em>
+        {% if page.exclude_testimonials_html_quotes %}
+        {{ item.quote }}
+        {% else %}
         &ldquo;{{ item.quote }}&rdquo;
+        {% endif %}
       </em>
     </p>
     <span class="benefits__typography--img-cap ms-4">&mdash;&nbsp;{{ item.name }}{% if item.year %} - {{ item.year }}{% endif %}</span>
@@ -36,7 +40,11 @@
   <div class="col-12 col-md-8 order-2 order-md-1 align-self-center">
     <p class="benefits__typography--student-p">
       <em>
+        {% if page.exclude_testimonials_html_quotes %}
+        {{ item.quote }}
+        {% else %}
         &ldquo;{{ item.quote }}&rdquo;
+        {% endif %}
       </em>
     </p>
     <span class="benefits__typography--img-cap ms-4">&mdash;&nbsp;{{ item.name }}{% if item.year %} - {{ item.year }}{% endif %}</span>
