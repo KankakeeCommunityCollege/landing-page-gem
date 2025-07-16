@@ -20,9 +20,8 @@
 // Footer's project self-link
 a.footer-link {
   color: $primary-blue;
-
+  text-decoration: none !important;
   &:hover {
-    text-decoration: none !important;
     color: $primary-red;
   }
 }
