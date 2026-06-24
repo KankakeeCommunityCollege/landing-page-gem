@@ -22,3 +22,6 @@
   {%- endif -%}
   <!-- Standard Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  {% if page.extra_metadata and page.extra_metadata != '' %}
+  {% include {{ page.extra_metadata }} %}
+  {% endif %}
