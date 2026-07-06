@@ -102,8 +102,8 @@
   padding-top: 25px;
 }
 
-.benefits__blue-section a,
-.benefits__first-section--marg a {
+.benefits__blue-section a:not(.btn-primary, .btn-outline-primary),
+.benefits__first-section--marg a:not(.btn-primary, .btn-outline-primary) {
   color: #0257d4;
 }
 
