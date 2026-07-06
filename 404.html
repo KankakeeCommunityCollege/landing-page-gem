@@ -6,6 +6,7 @@ baseurl: '/'
 ---
 
 <main class="positioning--min-height-100 positioning__offset-global-nav" id="content">
+  <h1 class="visually-hidden">{%- if page.outline_title -%}{{ page.outline_title }}{% else %}{{ page.title }}{%- endif -%}</h1>
   <div class="container">
     <div class="row">
       <div class="col">

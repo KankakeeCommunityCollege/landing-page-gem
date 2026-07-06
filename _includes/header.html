@@ -1,33 +1,34 @@
 <header id="content">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xl-8 header__bg positioning__offset-global-nav position-relative" {% if page.background_image %}style="background-image: url('{{ page.background_image }}');"{% endif %}>
-          <div class="row positioning__heading--row">
-            <div class="col-8 offset-4 positioning__col--offset text-center">
-              <h2 class="typography__register--h2 typography--text-shadow">{{ page.main_heading }}</h2>
-              <h3 class="typography__register--h3 typography--text-shadow">{{ page.sub_heading }}</h3>  
-            </div>
+  <h1 class="visually-hidden">{%- if page.outline_title -%}{{ page.outline_title }}{% else %}{{ page.title }}{%- endif -%}</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-8 header__bg positioning__offset-global-nav position-relative" {% if page.background_image %}style="background-image: url('{{ page.background_image }}');"{% endif %}>
+        <div class="row positioning__heading--row">
+          <div class="col-8 offset-4 positioning__col--offset text-center">
+            <h2 class="typography__register--h2 typography--text-shadow">{{ page.main_heading }}</h2>
+            <h3 class="typography__register--h3 typography--text-shadow">{{ page.sub_heading }}</h3>  
           </div>
-          <span class="typography__register--caption">Adrian Benfield, Class of 2017</span>
         </div>
-        <div class="col-xl-4 positioning__form--margins">
-          <h4 id="page-top" class="typography__register-h4 text-center">{{ page.form_heading }}</h4>
-          {%- comment -%}
-          <!--
-            <h5 class="typography__register-h5 text-center">Classes Begin Jan. 7th</h5>
-          <h5 class="typography__register-h5 text-center">Seats Are Filling Fast</h5>
-          -->
-          {%- endcomment -%}
-          <div class="positioning--max-width-700">
-            <iframe
-              id="targetx-form"
-              data-src="https://kccedu.my.salesforce-sites.com/Inquiry/TargetX_Base__InquiryForm#?formId=a0OUe0000002vS1MAI&formType=general&isEmbed=true"
-              title="KCC Information Request form"
-              width="100%"
-              height="930px"
-            ></iframe>
-          </div>
+        <span class="typography__register--caption">Adrian Benfield, Class of 2017</span>
+      </div>
+      <div class="col-xl-4 positioning__form--margins">
+        <h2 id="page-top" class="typography__register-h4 text-center">{{ page.form_heading }}</h2>
+        {%- comment -%}
+        <!--
+          <h5 class="typography__register-h5 text-center">Classes Begin Jan. 7th</h5>
+        <h5 class="typography__register-h5 text-center">Seats Are Filling Fast</h5>
+        -->
+        {%- endcomment -%}
+        <div class="positioning--max-width-700">
+          <iframe
+            id="targetx-form"
+            data-src="https://kccedu.my.salesforce-sites.com/Inquiry/TargetX_Base__InquiryForm#?formId=a0OUe0000002vS1MAI&formType=general&isEmbed=true"
+            title="KCC Information Request form"
+            width="100%"
+            height="930px"
+          ></iframe>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
