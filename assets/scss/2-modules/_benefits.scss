@@ -102,6 +102,11 @@
   padding-top: 25px;
 }
 
+.benefits__blue-section a,
+.benefits__first-section--marg a {
+  color: #0257d4;
+}
+
 @media screen and (min-width: 1200px) {
   .benefits__first-section--marg {
     margin-top: 15px;
